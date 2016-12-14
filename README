@@ -1,4 +1,5 @@
 npm install express-generator -g
+npm install nodemon -g
 express -v ejs ExpressHTML
 
 /*************/

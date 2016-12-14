@@ -1,6 +1,4 @@
-/**
- * Created by Administrateur on 14/12/2016.
- */
+"use strict"
 
 const contacts = [{
     prenom:'Bill',
@@ -22,6 +20,7 @@ class Contact{
         process.nextTick(() => {
             this._contact.id = contacts[contacts.length - 1].id +1;
             contacts.push(this._contact);
+            console.log(this._contact);
             cb(false, this._contact);
         })
     }
